@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config-dev
+    name: config-prod
 eureka:
   instance:
     prefer-ip-address: true
@@ -9,18 +9,3 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka
-spring:
-  datasource:
-    username: root
-    driverClassName: org.h2.Driver
-    password: root
-  h2:
-    console:
-      enabled: 'true'
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    show-sql: 'true'
-config:
-  server:
-    env:
-      dev
